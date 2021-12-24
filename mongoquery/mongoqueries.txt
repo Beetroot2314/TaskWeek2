@@ -1,0 +1,13 @@
+mongo
+
+show dbs
+use Student
+
+db.Student.insert({_id:1,name:"Amber",branch:"BTECH",course:"CSE"})
+db.Student.insert({_id:2,name:"John",branch:"BTECH",course:"CSE"})
+db.Student.insert({_id:3,name:"Clara",branch:"BTECH",course:"CSE"})
+
+
+db.Student.find() 
+
+db.Student.find().sort({name:1})
